@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox & CSS Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <span class="material-symbols-outlined icon">auto_awesome</span>
+        <h2>CSS Flexbox & CSS Grid</h2>
+      </div>
+      <nav>
+        <a href="#flexbox">Feitiços do Flexbox</a>
+        <a href="#grid">Tecelagem com Grid</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="flexbox">
+        <h1 class="section-title">FLEXBOX: A POÇÃO DO ALINHAMENTO</h1>
+        <p class="section-subtitle">
+          Aprenda como o Flexbox é usado para layouts unidimensionais, alinhar
+          itens e distribuir espaço ao longo de um único eixo.
+        </p>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image">
+              <img
+                src="./img/froggy.png"
+                alt="Sapo fantasma em estilo Halloween"
+                class="responsive-img"
+                loading="lazy"
+                decoding="async"
+                style="max-width: 100%; height: auto; display: block"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Alinhando Abóboras</h3>
+              <p>
+                O Flexbox facilita organizar itens. Aqui, estamos espaçando
+                nossas abóboras assustadoras uniformemente em seu contêiner.
+              </p>
+              <div class="code-block">
+                <span class="selector">.container</span> {<br />
+                &nbsp;&nbsp;<span class="property">display</span>:
+                <span class="value">flex</span>;<br />
+                &nbsp;&nbsp;<span class="property">justify-content</span>:
+                <span class="value">space-between</span>;<br />
+                &nbsp;&nbsp;<span class="property">align-items</span>:
+                <span class="value">center</span>;<br />
+                }
+              </div>
+              <div class="demo-box">
+                <p class="demo-label">Demonstração ao vivo:</p>
+                <div class="demo-flexbox">
+                  <span>🎃</span>
+                  <span>🎃</span>
+                  <span>🎃</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="grid">
+        <h1 class="section-title">CSS GRID: TECENDO A REDE</h1>
+        <p class="section-subtitle">
+          Descubra como o Grid cria layouts 2D poderosos, definindo linhas e
+          colunas para estruturas complexas e responsivas.
+        </p>
+        <div class="card">
+          <div class="card-content">
+            <div align="center" class="card-image">
+              <img
+                src="./img/garden.png"
+                alt="Jardim com poções e elementos mágicos"
+                class="responsive-img"
+                loading="lazy"
+                decoding="async"
+                style="max-width: 100%; height: auto; display: block"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Layout da Prateleira de Poções</h3>
+              <p>
+                O Grid é perfeito para organizar itens em linhas e colunas, como
+                esta prateleira de poções misteriosas.
+              </p>
+              <div class="code-block">
+                <span class="selector">.container</span> {<br />
+                &nbsp;&nbsp;<span class="property">display</span>:
+                <span class="value">grid</span>;<br />
+                &nbsp;&nbsp;<span class="property">grid-template-columns</span>:
+                <span class="value">1fr 1fr 1fr</span>;<br />
+                &nbsp;&nbsp;<span class="property">gap</span>:
+                <span class="value">1em</span>;<br />
+                }
+              </div>
+              <div class="demo-box">
+                <p class="demo-label">Demonstração ao vivo:</p>
+                <div class="demo-grid">
+                  <div class="demo-grid-item">🧪</div>
+                  <div class="demo-grid-item">🔮</div>
+                  <div class="demo-grid-item">⚗️</div>
+                  <div class="demo-grid-item">🧿</div>
+                  <div class="demo-grid-item">🩸</div>
+                  <div class="demo-grid-item">✨</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Criado por Guilherme Constantino de Lara 👻</p>
+    </footer>
+  </body>
+</html>
